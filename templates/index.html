@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<div class="container">
+   
+        <section style="background-color: rgb(80, 19, 185);">
+            <div class="col-md-12 text-center" style="background-color: rgb(80, 19, 185);">
+                <h1>NOVO</h1>
+                <h6 class="text-center">Enriching <span style="color: aqua;">Agriculture</span></h6>
+                <div class="swiper mySwiper" >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img height="500px" width="100%" class="mt-5" src="{% static 'images/images.jpg' %}" alt=""></div>
+                        <div class="swiper-slide"><img height="500px" width="100%" class="mt-5" src="{% static 'images/images.jpg' %}" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <h1>Your Dashboard</h1>
+        <section>
+            
+           <div class="row p-3">
+            <div class="col md-6">
+                <a href="{% url 'crops' %}" style="text-decoration: none;">
+               <div class="text-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: rgb(50, 161, 221);">
+                <div class="p-5">
+                    <img width="20%" src="{% static 'images/icon/wheat.png' %}" alt="">
+                    <h1>My Crops</h1>
+                </div>
+               </div>
+            </a>
+            </div>
+            <div class="col md-6">
+                <div class="text-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: rgb(50, 221, 110);">
+                    <div class="p-5">
+                        <img width="20%" src="{% static 'images/icon/user.png' %}" alt="">
+                        <h1>My Profile</h1>
+                    </div>
+                </div>
+            </div> 
+           </div>
+            <div class="row p-3">
+            <div class="col md-6">
+                <div class="text-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: rgb(187, 221, 50);">
+                    <div class="p-5">
+                        <img width="20%" src="{% static 'images/icon/doctor.png' %}" alt="">
+                        <h1>Crop Doctor</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col md-6">
+                <div class="text-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: rgb(221, 50, 173);">
+                    <div class="p-5">
+                        <img width="20%" src="{% static 'images/icon/food-cart.png' %}" alt="">
+                        <h1>Sellers</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col md-6">
+                <div class="text-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: rgb(221, 195, 50);">
+                    <div class="p-5">
+                        <img width="20%" src="{% static 'images/icon/book.png' %}" alt="">
+                        <h1>khata Book</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col md-6">
+                <div class="text-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: rgb(50, 221, 147);">
+                    <div class="p-5">
+                        <img width="20%" src="{% static 'images/icon/payment.png' %}" alt="">
+                        <h1>Transactions</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col md-6">
+                <div class="text-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: rgb(60, 79, 57);">
+                    <div class="p-5">
+                        <img width="20%" src="{% static 'images/icon/video.png' %}" alt="">
+                        <h1>Videos</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col md-6">
+                <div class="text-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: rgb(110, 221, 50);">
+                    <div class="p-5">
+                        <img width="20%" src="{% static 'images/icon/quiz.png' %}" alt="">
+                        <h1>Quiz</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row p-3">
+            <div class="col md-6">
+                <div class="text-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: rgb(215, 221, 50);">
+                    <div class="p-5">
+                        <img width="20%" src="{% static 'images/icon/interest-rate.png' %}" alt="">
+                        <h1>Bazer Rates</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col md-6">
+                <div class="text-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: rgb(84, 50, 221);">
+                    <div class="p-5">
+                        <img width="20%" src="{% static 'images/icon/newspaper.png' %}" alt="">
+                        <h1>News</h1>
+                    </div>
+                </div>
+            </div>
+            
+           </div>
+
+           <div class="row p-3">
+            <div class="col md-6">
+                <div class="text-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: rgb(50, 161, 221);">
+                    <div class="p-5">
+                        <img width="20%" src="{% static 'images/icon/radio.png' %}" alt="">
+                        <h1>Radio</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col md-6">
+                <div class="text-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: rgb(221, 50, 141);">
+                    <div class="p-5">
+                        <img width="20%" src="{% static 'images/icon/contact-us.png' %}" alt="">
+                        <h1>Contact Us</h1>
+                    </div>
+                </div>
+            </div>
+            
+           </div>
+            
+        </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="{% static 'main.js' %}"></script> 
+{% endblock %}

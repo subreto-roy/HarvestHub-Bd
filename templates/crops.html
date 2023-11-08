@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="container">
+    <div class="row" style="background-color: blue;">
+        <h1 class="text-center">NOVO</h1>
+        <h6 class="ce-t text-center">My crops</h6>
+
+        <a href="{% url 'crops_list' %}" id="add-button">+</a>
+
+       
+
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}

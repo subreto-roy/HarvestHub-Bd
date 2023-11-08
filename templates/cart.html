@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<!-- <style>
+    .text1 {
+        color: rgb(21, 30, 27);
+    }
+</style> -->
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<body>
+    <div class="container mt-5">
+
+        <div class="row">
+            <h1 class="text-center fs-1">NOVO</h1>
+
+            <h6  class="text-center">Enriching <span style="color: aqua;">Agriculture</span></h6>
+
+            <img class="cart-img mt-5" src="{% static 'images/images.jpg' %}" alt="">
+
+            <h5 class="text-center mt-5">Select Language</h5>
+            <section>
+                <div class="row p-3">
+                    <div class="col-md-6">
+                        <div class="text-center" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; width: 200px; height: 200px; margin-left: 400px ;">
+                            <div class="p-5">
+                                <h1>Bangla</h1>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-6">
+                        <div class="text-center" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; width: 200px; height: 200px;">
+                            <div class="p-5">
+                                <h1>English</h1>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        
+            <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                <a href="{% url 'index' %}">
+                    <div class="d-grid gap-2 col-6 mx-auto"style="color: blueviolet;">
+                        <button class="btn btn-primary" type="button">Select Language</button>
+                        
+                      </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+{% endblock %}

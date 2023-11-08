@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+<div class="container mt-5 pt-4">
+    <div class="row">
+        <div class="p-5 col md-12">
+            <h1 class="text-center">NOVO</h1>
+            <h6  class="text-center">Enriching <span style="color: aqua;">Agriculture</span></h6>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <input type="text" placeholder="Mobile" class="form-control" name="mobile" id="">
+                            </div>
+                        </div>
+                         <br>
+        
+                        <!-- <p>Don't have account <a href="{% url 'register' %}">Register</a></p> -->
+                        <button class="btn btn-primary">Verify</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+        <div class="col-6 mx-auto">
+
+            {% if message %}
+            <div class="alert alert-{{class}}">
+                {{message}}
+            </div>
+            {% endif %}
+
+            <form class="mt-2" method="post">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="form-group col-12 mt-3">
+                        <input type="text" placeholder="Enter otp" class="form-control" name="otp" id="">
+                    </div>
+                </div>
+
+                <!-- <p>Don't have account <a href="{% url 'register' %}">Register</a></p> -->
+                <br>
+                <button class="btn btn-primary">Send OTP</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
