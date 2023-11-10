@@ -21,7 +21,6 @@ def send_otp(mobile, otp):
     conn = http.client.HTTPSConnection("api.msg91.com")
     authkey = settings.AUTH_KEY 
 
-    # Properly encode the URL parameters
     otp = quote(otp)
     message = quote("Your otp is " + otp)
     mobile = quote(mobile)
@@ -90,8 +89,8 @@ def register(request):
             context = {'message': 'User already exists', 'class': 'danger'}
             return render(request, 'register.html', context)
             
-        # Generate a unique username, for example, using the email address
-        username = email.split('@')[0]  # Use a part of the email as the username
+       
+        username = email.split('@')[0]  
         user = User(username=username, email=email, first_name=name)
         user.save()
         
